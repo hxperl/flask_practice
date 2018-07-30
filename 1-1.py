@@ -10,7 +10,7 @@ def application(environ, start_response):
     return [response_body.encode("utf-8")]
 
 httpd = make_server(
-    'localhost',
+    "0.0.0.0",
     8051,
     application
 )
