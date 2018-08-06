@@ -1,6 +1,8 @@
 from flask import Flask, request
 from datetime import datetime
 
+app = Flask(__name__)
+
 class dateKoreanType:
     def __init__(self, format):
         self.format = format
@@ -12,3 +14,6 @@ class dateKoreanType:
 def board():
     print(request.values.get("date", "2015-02-09", type=dateKoreanType("%Y-%m-%d")))
     return "check ur console"
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0")
