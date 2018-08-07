@@ -7,6 +7,7 @@ def custom_reponse():
     c_response = Response("User Response Test")
 
     c_response.headers.add('Program-Name', 'The Second Flask Book')
+    c_response.set_data("this book is for flask students")
 
     return c_response
 
