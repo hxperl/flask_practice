@@ -8,7 +8,6 @@ def example_environ():
     "SCRIPT_NAME: %(SCRIPT_NAME)s<br>"\
     "PATH_INFO: %(PATH_INFO)s<br>"\
     "QUERY_STRING: %(QUERY_STRING)s<br>"\
-    "CONTENT_TYPE: %(CONTENT_TYPE)s<br>"\
     "SERVER_NAME: %(SERVER_NAME)s<br>"\
     "SERVER_PORT: %(SERVER_PORT)s<br>"\
     "SERVER_PROTOCOL: %(SERVER_PROTOCOL)s<br>"\
