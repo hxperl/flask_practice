@@ -2,9 +2,9 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route("/example/json", methods=["POST"])
-def example_json():
-    print(request.get_json())
+@app.route("/example/max_content_len", methods=["GET"])
+def example_content_length():
+    print(request.max_content_length)
     return ""
 
 if __name__ == "__main__":
