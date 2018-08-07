@@ -16,5 +16,9 @@ def cookie_out():
 
     return custom_resp
 
+@app.route("/cookie_status")
+def cookie_status():
+    return "ID cookie has %s value" % request.cookies.get('ID', 'emptystring')
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000)
