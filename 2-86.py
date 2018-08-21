@@ -14,7 +14,7 @@ app.logger.addHandler(file_logger)
 
 @app.route("/log")
 def logger():
-    app.loger.debug("print DEBUG message")
+    app.logger.debug("print DEBUG message")
     return "check console"
 
 app.run(host="0.0.0.0")
